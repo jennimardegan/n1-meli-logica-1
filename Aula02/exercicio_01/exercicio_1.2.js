@@ -58,23 +58,51 @@ if (num1 == sorte) {
 }
 else {
     if (num1 > sorte) {
-        alert(`O número deve ser menor!`)
+        alert(`O número deve ser menor! Tente mais uma vez.`)
         const num2 = parseInt(prompt("Adivinhe um número de 1 a 10"));
-            if (num2 == sorte) {
+            if (num2 > sorte) {
+                alert(`O número deve ser menor! Tente mais uma vez.`)
+                const num3 = parseInt(prompt("Adivinhe um número de 1 a 10"));
+                if (num3 == sorte) {
+                    alert(`Parabéns, vc acertou o número ${sorte}!`)
+                    }
+                else {
+                    alert(`Não foi dessa vez.`)
+                    }    
+                }
+            else {
+                alert(`O número deve ser menor! Tente mais uma vez.`)
+                const num3 = parseInt(prompt("Adivinhe um número de 1 a 10"));
+                if (num3 == sorte) {
+                    alert(`Parabéns, vc acertou o número ${sorte}!`)
+                    }
+                else {
+                    alert(`Não foi dessa vez.`)
+                    } 
+                }
+        }
+    else {
+        alert(`O número deve ser menor! Tente mais uma vez.`)
+        const num2 = parseInt(prompt("Adivinhe um número de 1 a 10"));
+        if (num2 > sorte) {
+            alert(`O número deve ser menor! Tente mais uma vez.`)
+            const num3 = parseInt(prompt("Adivinhe um número de 1 a 10"));
+            if (num3 == sorte) {
                 alert(`Parabéns, vc acertou o número ${sorte}!`)
                 }
             else {
                 alert(`Não foi dessa vez.`)
-                }
-        }
-    else {
-        alert(`O número deve ser maior!`)
-        const num2 = parseInt(prompt("Adivinhe um número de 1 a 10"));
-        if (num2 == sorte) {
-            alert(`Parabéns, vc acertou o número ${sorte}!`)
+                }    
             }
         else {
-            alert(`Não foi dessa vez.`)
+            alert(`O número deve ser menor! Tente mais uma vez.`)
+            const num3 = parseInt(prompt("Adivinhe um número de 1 a 10"));
+            if (num3 == sorte) {
+                alert(`Parabéns, vc acertou o número ${sorte}!`)
+                }
+            else {
+                alert(`Não foi dessa vez.`)
+                } 
             }
         }
     
